@@ -8,3 +8,10 @@ editor: visual
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Loading libraries
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
+
