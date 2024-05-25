@@ -11,11 +11,21 @@ Quarto enables you to weave together content and executable code into a finished
 
 ## Libraries
 
-```{r loading_libraries}
+```{r loading_libraries, message=FALSE, warning=FALSE}
 
 library(tidyverse)
 library(ggplot2)
 library(dplyr)
 
+```
+
+
+```{r plotting}
+library(nycflights13)
+
+ggplot(flights, aes(x = dep_delay, y = arr_delay)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Departure Delay (minutes)", y = "Arrival Delay (minutes)",
+       title = "Departure Delay vs Arrival Delay")
 ```
 
